@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.grbkhd.mapper.LiulanMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.grbkhd.pojo.Liulan">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="date" column="date" jdbcType="TIMESTAMP"/>
+            <result property="liulan" column="liulan" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,date,liulan
+    </sql>
+</mapper>
